@@ -1,0 +1,63 @@
+html {
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(44, 243, 196, 1));
+    background-repeat: no-repeat;
+    height: 100%;
+}
+body {
+    letter-spacing: 1.1px;
+    margin: 0px;
+    width: calc(100% - 50px);
+    height: calc(100% - 30px);
+    color: #ffffff;
+    font-family: 'Consolas';
+}
+/*Lucida Console, Lucida Sans Unicode, Fira Mono, Consolas, Courier New, Courier, monospace, Times New Roman*/
+svg {
+    float: left;
+    position: absolute;
+    top: 25%;
+    left: 0px;
+    min-height: max-content;
+    z-index: -1;
+    vertical-align: middle;
+    margin: 0px;
+    overflow: hidden;
+    height: 75%;
+}
+polygon {
+    fill: rgb(10, 53, 40);
+}
+h1 {
+    font-size: 44px;
+}
+.upload-view {
+    position: relative;
+    left: 50px;
+    font-size: 18px;
+}
+
+button {
+    letter-spacing: 2px;
+    padding: 0px;
+    color: #ffffff;
+    border-color: rgb(91, 123, 121);
+    border-style: solid;
+    border-width: 1px;
+    background-color: rgba(56, 87, 81, 1);
+    width: 15em;
+    text-align: left;
+    height: 1.5em;
+    font-size: 18px;
+}
+button:hover {
+    background: rgba(101, 110, 111, 1);
+}
+.colorfull {
+    height: 100%;
+    width: 20%;
+    font-size: 22px;
+}
+.btn-cntent {
+    margin: 5px;
+}
+/*rgb(44, 243, 196)*/

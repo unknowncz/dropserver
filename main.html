@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/main.css">
+        <link rel="stylesheet" href="/fsys.css">
+    </head>
+    <body>
+        <span class="upload-view">
+            <h1>Bibliotheque Drop</h1>
+            You are authenticated for open file uploading to this server.<br>
+            Use the "upload [LOCAL_FILENAME]" command to upload files<br>
+            <br>
+            REMINDER: Files downloaded with [scp] are downloaded to /home<br>
+            (or /bin for executables)<br>
+            Uploads from there need their path proceeded as such: home/[filename]<br>
+            The Tab key can be used to autocomplete paths and names of local files to upload.<br><br>
+            <button class="switch"><span class="colorfull" style="background-color: rgb(49, 249, 193);">&nbsp;&nbsp;</span><span class="btn-cntent">Exit Upload View</span></button>
+        </span>
+        <span class="file-sys-view" style="display: none;">
+            <button class="switch back">&lt;&dash;</button><h1>Bibliotheque Drop Server File System</h1><br>
+
+            <div><button class="folder"><span class="colorfull" style="background-color: rgb(91, 123, 121);">&nbsp;&nbsp;</span>&nbsp;/home</button></div>
+            <div><button class="folder"><span class="colorfull" style="background-color: rgb(91, 123, 121);">&nbsp;&nbsp;</span>&nbsp;/log</button></div>
+            <div><button class="folder"><span class="colorfull" style="background-color: rgb(91, 123, 121);">&nbsp;&nbsp;</span>&nbsp;/bin</button></div>
+            <div><button class="folder"><span class="colorfull" style="background-color: rgb(91, 123, 121);">&nbsp;&nbsp;</span>&nbsp;/sys</button></div>
+            <div><button class="folder"><span class="colorfull" style="background-color: rgb(91, 123, 121);">&nbsp;&nbsp;</span>&nbsp;/Uploads</button></div>
+
+        </span>
+        <br>
+        <svg viewBox="0 0 5 5">
+            <polygon style="padding: 0px;" points="0,0 2,2 0.75,2 0.75,5 0,5"></polygon>
+        </svg>
+        <script src="/main.js"></script>
+    </body>
+</html>

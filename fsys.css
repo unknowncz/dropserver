@@ -1,0 +1,27 @@
+.file-sys-view > h1 {
+    font-size: 40px;
+}
+.file-sys-view > * {
+    margin-left: 25px;
+}
+:is(.file-sys-view > button, .file-sys-view > * > button) {
+    background: rgb(51, 51, 51);
+}
+
+button.back {
+    position: absolute;
+    right: 5%;
+    top: 35px;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    float: right;
+}
+button:hover {
+    background: rgba(101, 110, 111, 1);
+}
+
+:is(.folder, .file) {
+    margin: 2.5px;
+    letter-spacing: .7px;
+}
