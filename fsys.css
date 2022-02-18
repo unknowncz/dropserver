@@ -1,11 +1,13 @@
 .file-sys-view > h1 {
     font-size: 40px;
+    margin-right: 5%;
 }
 .file-sys-view > * {
     margin-left: 25px;
 }
 :is(.file-sys-view > button, .file-sys-view > * > button) {
     background: rgb(51, 51, 51);
+    width: 50%;
 }
 
 button.back {
@@ -23,5 +25,19 @@ button:hover {
 
 :is(.folder, .file) {
     margin: 2.5px;
-    letter-spacing: .7px;
+    letter-spacing: .8px;
+}
+
+button.file {
+    width: calc(50% - 45px);
+    margin-left: 60px;
+}
+
+div:not(.static) {
+    width: 100%;
+    margin: 0px;
+}
+
+div.file {
+    padding: 2px 0px 2px 60px;
 }
