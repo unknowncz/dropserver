@@ -81,7 +81,7 @@ class handler:
                 except:
                     pass
             with open(f'{__file__}\\..\\uploads\\{filename}', 'x')as f:
-                try: 
+                try:
                     f.write(temp[-1].split('\r\n')[1])
                     x = len(temp[-1].split('\r\n')[1])
                 except:
@@ -142,5 +142,5 @@ if __name__ == '__main__':
                 with conn:
                     time.sleep(0.2)
                     threading.Thread(target=handler, args=(conn,)).run()
-            except ConnectionAbortedError as e:
-                print(e.strerror)
+            except Exception:
+                traceback.print_exc()
